@@ -1,0 +1,70 @@
+main: me.essentialsremake.yt.Main
+name: EssentialsRemake
+version: 1.0.0-DEV
+author: LuckyLuckiest
+description: EssentialsRemake Plugin!
+
+commands:
+  heal:
+    description: Heal the player!
+    default: op
+  feed:
+    description: Feed the player!
+    default: op
+  fly:
+    description: Fly in the air!
+    default: op
+  god:
+    description: Set yourself to God Mode!
+    default: op
+  freeze:
+    description: Freeze in your place!
+    default: op
+  hat:
+    description: Wear a Hat!
+    default: op
+    aliases: [head]
+
+permissions:
+  essentialsremake.*:
+    description: Full Access to all permissions!
+    default: op
+    children:
+      essentialsremake.all: true
+  essentialsremake.all:
+    description: Full Access to permissions!
+    default: op
+    children:
+      essentialsremake.heal: true
+      essentialsremake.heal.others: true
+      essentialsremake.feed: true
+      essentialsremake.feed.others: true
+      essentialsremake.fly: true
+      essentialsremake.fly.others: true
+      essentialsremake.god: true
+      essentialsremake.god.others: true
+      essentialsremake.freeze: true
+      essentialsremake.freeze.others: true
+      essentialsremake.hat: true
+  essentialsremake.heal:
+    default: op
+  essentialsremake.heal.others:
+    default: op
+  essentialsremake.feed:
+    default: op
+  essentialsremake.feed.others:
+    default: op
+  essentialsremake.fly:
+    default: op
+  essentialsremake.fly.others:
+    default: op
+  essentialsremake.god:
+    default: op
+  essentialsremake.god.others:
+    default: op
+  essentialsremake.freeze:
+    default: op
+  essentialsremake.freeze.others:
+    default: op
+  essentialsremake.hat:
+    default: op
